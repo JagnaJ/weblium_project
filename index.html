@@ -4,62 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coming Soon Landing Website</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="header__nav">
             <div class="company-name">
-                <h2>Leaf Company</h2>
+                <h1 class="company-name__title">Leaf Company</h1>
             </div>
             <div class="contacts">
-                <a href="#contacts">CONTACTS</a>
+                <a href="#contacts" class="contacts__link">CONTACTS</a>
             </div>
             <div class="burger-menu"></div>
 
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="block-informational">
             <p>This website is under construction until August'25 but...</p>
             <p>We'll be back very soon</p>
             <p>and you still can order our services or subscribe for the best offers!</p>
             <div class="buttons">
-                <button class="left">Our Cervices</button>
-                <button class="right">Receive Offers</button>
+                <a href="#our-cervices" class="button">Our Cervices</a>
+                <a href="#contacts" class="button">Receive Offers</a>
             </div>
         </section>
-        <section class="cervices">
-            <h3>Our Services</h3>
-            <p>We provide all kind of services for small and micro businesses:</p>
-            <div class="left__block-analytics">
+        <section class="cervices" id="our-cervices">
+            <h3 class="cervices__title">Our Services</h3>
+            <p class="cervices__description">We provide all kind of services for small and micro businesses:</p>
+            <div class="left__block-analytics cervices__block">
                 <div class="photo">
                     <img src="img/analytics.webp" alt="analytics">
                 </div>
-                <p>Analytics</p>
-                <p>Identify weaknesses of your business and find the most effective solution.</p>
+                <p class="cervices__name">Analytics</p>
+                <p class="cervices__info">Identify weaknesses of your business and find the most effective solution.</p>
             </div>
-            <div class="middle__block-branding">
+            <div class="middle__block-branding cervices__block">
                 <div class="photo">
                     <img src="img/branding.webp" alt="branding">
                 </div>
-                <p>Branding</p>
-                <p>Build a strong brand around your business to evolve and scale up.</p>
+                <p class="cervices__name">Branding</p>
+                <p class="cervices__info">Build a strong brand around your business to evolve and scale up.</p>
             </div>
-            <div class="right__block-strategy">
+            <div class="right__block-strategy cervices__block">
                 <div class="photo">
                     <img src="img/strategy.webp" alt="strategy">
                 </div>
-                <p>Strategy</p>
-                <p>We find all the ways to achieve your business goals and grow fast.</p>
+                <p class="cervices__name">Strategy</p>
+                <p class="cervices__info">We find all the ways to achieve your business goals and grow fast.</p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="contacts__footer-inf">
             <h3 id="contacts">Contacts</h3>
-            <p>Though our website is under construction, you can always call us, write us or simply visit us. Fill out
+            <p class="contacts__footer-description">Though our website is under construction, you can always call us, write us or simply visit us. Fill out
                 the form to get the best personalized offers by mail.</p>
             <div class="info-details">
                 <p class="info address">Address</p>
@@ -73,9 +75,17 @@
                     leafcompany@email.com</p>
             </div>
         </div>
-        <div class="contacts__footer-clients">
-
-        </div>
+        <section class="contacts__footer-clients">
+            <form action="https://formspree.io/f/xeqyaeaj" method="post">
+                <label>Name*
+                    <input type="text" name="name" required>
+                </label>
+                <label>E-mail*
+                    <input type="email" name="email" required>
+                </label>
+                <input type="submit" value="Receive Offers">
+            </form>
+        </section>
     </footer>
 </body>
 
